@@ -46,7 +46,7 @@ namespace RunicQuest
 
             // Generate map via GoRogue, and update the real map with appropriate terrain.
             var tempMap = new ArrayMap<bool>(map.Width, map.Height);
-            QuickGenerators.GenerateDungeonMazeMap(tempMap, minRooms: 10, maxRooms: 20, roomMinSize: 5, roomMaxSize: 11);
+            QuickGenerators.GenerateDungeonMazeMap(tempMap, minRooms: 800, maxRooms: 140, roomMinSize: 12, roomMaxSize: 24);
             map.ApplyTerrainOverlay(tempMap, SpawnTerrain);
 
             Coord posToSpawn;
