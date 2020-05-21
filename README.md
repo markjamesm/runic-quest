@@ -1,4 +1,4 @@
-﻿﻿# Runic Quest
+## Runic Quest
 
 ![build](https://github.com/markjamesm/Runic-Quest/workflows/.NET%20Core/badge.svg) [![Platforms](https://img.shields.io/badge/platforms-desktop-orange.svg)]() [![C#](https://img.shields.io/badge/CSharp-darkgreen.svg)](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) [![License](https://img.shields.io/badge/License-GPL-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
