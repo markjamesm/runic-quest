@@ -79,7 +79,7 @@ namespace RunicQuest
             if (mapGenValue) // Floor
                 return new BasicTerrain(Color.White, Color.Black, '.', position, isWalkable: true, isTransparent: true);
             else             // Wall
-                return new BasicTerrain(Color.White, Color.Black, '#', position, isWalkable: false, isTransparent: false);
+                return new BasicTerrain(Color.LightGray, Color.Black, '#', position, isWalkable: false, isTransparent: false);
         }
     }
 }

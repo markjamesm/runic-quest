@@ -20,7 +20,7 @@ namespace RunicQuest
         public int FOVRadius;
 
         public Player(Coord position)
-            : base(Color.White, Color.Black, '@', position, (int)MapLayer.PLAYER, isWalkable: false, isTransparent: true) => FOVRadius = 10;
+            : base(Color.LightGreen, Color.Black, '@', position, (int)MapLayer.PLAYER, isWalkable: false, isTransparent: true) => FOVRadius = 10;
 
 
         public override bool ProcessKeyboard(SadConsole.Input.Keyboard info)
