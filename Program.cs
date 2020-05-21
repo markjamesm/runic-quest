@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-
+        // Set the map and viewport dimensions.
         private const int ViewPortWidth = 80;
         private const int ViewPortHeight = 25;
 
