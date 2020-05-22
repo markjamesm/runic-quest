@@ -1,4 +1,7 @@
-﻿namespace RunicQuest
+﻿using GoRogue.GameFramework;
+using SadConsoleRLTutorial;
+
+namespace RunicQuest
 {
     internal class Program
     {
@@ -10,6 +13,8 @@
         private const int MapHeight = 500;
 
         public static MapScreen MapScreen { get; set; }
+
+        public static UIManager UIManager;
 
         private static void Main()
         {
@@ -26,9 +31,13 @@
 
         private static void Init()
         {
+
+            UIManager = new UIManager();
+
             // Here we pass the viewport and map size as the same, but the map could be larger and the camera would center on the player.
             MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
-            SadConsole.Global.CurrentScreen = MapScreen;
+            MapScreen.Parent = UIManager;
+           // SadConsole.Global.CurrentScreen = MapScreen;
         }
     }
 }

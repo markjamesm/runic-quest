@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using RunicQuest;
 using SadConsole;
 namespace SadConsoleRLTutorial
 {
@@ -6,7 +7,6 @@ namespace SadConsoleRLTutorial
     // and makes consoles easily addressable from a central place.
     public class UIManager : ContainerConsole
     {
-        public ScrollingConsole MapConsole;
 
         public UIManager()
         {
@@ -18,6 +18,14 @@ namespace SadConsoleRLTutorial
             // The UIManager becomes the only
             // screen that SadConsole processes
             Parent = SadConsole.Global.CurrentScreen;
+        }
+
+        // Creates all child consoles to be managed
+        // make sure they are added as children
+        // so they are updated and drawn
+        public void CreateConsoles()
+        {
+       //     MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
         }
     }
 }
