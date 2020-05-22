@@ -2,7 +2,7 @@
 
 namespace RunicQuest
 {
-    internal class Program
+    internal class GameLoop
     {
 
         public static UIManager UIManager;
