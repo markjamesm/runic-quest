@@ -1,12 +1,26 @@
 ﻿using Microsoft.Xna.Framework;
-using RunicQuest;
 using SadConsole;
-namespace SadConsoleRLTutorial
+using GoRogue;
+using GoRogue.GameFramework;
+using GoRogue.MapGeneration;
+using GoRogue.MapViews;
+using XnaRect = Microsoft.Xna.Framework.Rectangle;
+
+namespace RunicQuest
 {
     // Creates/Holds/Destroys all consoles used in the game
     // and makes consoles easily addressable from a central place.
     public class UIManager : ContainerConsole
     {
+
+        // Set the map and viewport dimensions.
+        public const int ViewPortWidth = 80;
+        public const int ViewPortHeight = 25;
+
+        private const int MapWidth = 500;
+        private const int MapHeight = 500;
+
+        internal MapScreen MapScreen { get; private set; }
 
         public UIManager()
         {
@@ -25,7 +39,8 @@ namespace SadConsoleRLTutorial
         // so they are updated and drawn
         public void CreateConsoles()
         {
-       //     MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
+            // Generate and display the map
+            MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
         }
     }
 }

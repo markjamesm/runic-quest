@@ -8,7 +8,7 @@ using XnaRect = Microsoft.Xna.Framework.Rectangle;
 
 namespace RunicQuest
 {
-    internal class MapScreen : ContainerConsole
+    internal class MapScreen : UIManager
     {
         public RunicQuestMap Map { get; }
         public ScrollingConsole MapRenderer { get; }
