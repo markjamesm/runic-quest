@@ -1,13 +1,10 @@
-﻿using SadConsole;
-using Microsoft.Xna.Framework;
-
-namespace RunicQuest
+﻿namespace RunicQuest
 {
     internal class Program
     {
         // Set the map and viewport dimensions.
         private const int ViewPortWidth = 80;
-        private const int ViewPortHeight = 22;
+        private const int ViewPortHeight = 25;
 
         private const int MapWidth = 500;
         private const int MapHeight = 500;
@@ -29,21 +26,9 @@ namespace RunicQuest
 
         private static void Init()
         {
-
-            var consoleParent = new Console(80, 3);
-
-            consoleParent.Position = new Point(0, 0);
-            consoleParent.Fill(null, Color.DarkSlateBlue, null);
-            consoleParent.Print(1, 1, $"Adding more UI elements!");
-
             // Here we pass the viewport and map size as the same, but the map could be larger and the camera would center on the player.
             MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
-            MapScreen.Position = new Point(0, 4);
-         //   SadConsole.Global.CurrentScreen = MapScreen;
-
-            MapScreen.Parent = consoleParent;
-
-            SadConsole.Global.CurrentScreen = consoleParent;
+            SadConsole.Global.CurrentScreen = MapScreen;
         }
     }
 }
