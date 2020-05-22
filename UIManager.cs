@@ -44,10 +44,12 @@ namespace RunicQuest
             // Generate and display the map
             MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
 
-            MessageLog = new MessageLogWindow(ViewPortWidth / 2, ViewPortHeight / 2, "Message Log");
+            Children.Add(MapScreen);
+
+            MessageLog = new MessageLogWindow(ViewPortWidth/3, ViewPortHeight / 2, "Message Log");
             Children.Add(MessageLog);
             MessageLog.Show();
-            MessageLog.Position = new Point(0, ViewPortHeight / 2);
+            MessageLog.Position = new Point(0, 14);
 
             MessageLog.Add("Testing 123");
         }
