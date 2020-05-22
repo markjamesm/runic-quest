@@ -41,16 +41,20 @@ namespace RunicQuest
         // so they are updated and drawn
         public void CreateConsoles()
         {
-            // Generate and display the map
+            // Generate the map and add it as a Child of the UI manager
             MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
-
             Children.Add(MapScreen);
 
-            MessageLog = new MessageLogWindow(ViewPortWidth/3, ViewPortHeight / 2, "Message Log");
+            // Create the message log window and set its position.
+            MessageLog = new MessageLogWindow(ViewPortWidth, ViewPortHeight / 4, "Message Log");
             Children.Add(MessageLog);
             MessageLog.Show();
-            MessageLog.Position = new Point(0, 14);
+            MessageLog.Position = new Point(0, 20);
 
+            // Print a test method
+            MessageLog.Add("Testing 123");
+            MessageLog.Add("Testing 123");
+            MessageLog.Add("Testing 123");
             MessageLog.Add("Testing 123");
         }
     }
