@@ -9,6 +9,7 @@ namespace RunicQuest
     // Custom class for the player is used in this example just so we can handle input.  This could be done via a component, or in a main screen, but for simplicity we do it here.
     internal class Player : BasicEntity
     {
+
         private static readonly Dictionary<Keys, Direction> s_movementDirectionMapping = new Dictionary<Keys, Direction>
         {
             { Keys.NumPad7, Direction.UP_LEFT }, { Keys.NumPad8, Direction.UP }, { Keys.NumPad9, Direction.UP_RIGHT },
@@ -20,7 +21,7 @@ namespace RunicQuest
         public int FOVRadius;
 
         public Player(Coord position)
-            : base(Color.LightGreen, Color.Black, '@', position, (int)MapLayer.PLAYER, isWalkable: false, isTransparent: true) => FOVRadius = 10;
+            : base(Color.Red, Color.Black, '@', position, (int)MapLayer.PLAYER, isWalkable: false, isTransparent: true) => FOVRadius = 2;
 
 
         public override bool ProcessKeyboard(SadConsole.Input.Keyboard info)

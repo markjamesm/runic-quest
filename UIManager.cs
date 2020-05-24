@@ -53,9 +53,6 @@ namespace RunicQuest
 
             // Print a test method
             MessageLog.Add("Testing 123");
-            MessageLog.Add("Testing 123");
-            MessageLog.Add("Testing 123");
-            MessageLog.Add("Testing 123");
         }
     }
 }
