@@ -26,8 +26,8 @@ namespace RunicQuest
             // Create our UI Manager and then spawn our consoles.
             UIManager = new UIManager();
 
-            // From an unreleased SadConsole build. Will uncomment when its release.
-            // SadConsole.Themes.Library.Default.Colors = SadConsole.Themes.Colors.CreateAnsi();
+            // Create a new black theme.
+            SadConsole.Themes.Library.Default.Colors = SadConsole.Themes.Colors.CreateAnsi();
             UIManager.CreateConsoles();
 
         }
