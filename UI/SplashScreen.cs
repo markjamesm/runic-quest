@@ -8,7 +8,7 @@ using SadConsole.Effects;
 using SadConsole.Instructions;
 using Console = SadConsole.Console;
 
-namespace RunicQuest
+namespace RunicQuest.UI
 {
     internal class SplashScreen : ScrollingConsole
     {

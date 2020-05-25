@@ -6,7 +6,7 @@ using GoRogue.MapGeneration;
 using GoRogue.MapViews;
 using XnaRect = Microsoft.Xna.Framework.Rectangle;
 
-namespace RunicQuest
+namespace RunicQuest.UI
 {
     // Creates/Holds/Destroys all consoles used in the game
     // and makes consoles easily addressable from a central place.
@@ -45,7 +45,6 @@ namespace RunicQuest
         {
 
             // Display the Splashscreen
-
             SplashScreen = new SplashScreen();
             Children.Add(SplashScreen);
             SplashScreen.IsVisible = true;

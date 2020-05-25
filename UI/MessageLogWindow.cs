@@ -3,7 +3,7 @@ using SadConsole;
 using System;
 using Microsoft.Xna.Framework;
 
-namespace RunicQuest
+namespace RunicQuest.UI
 {
     //A scrollable window that displays messages
     //using a FIFO (first-in-first-out) Queue data structure
