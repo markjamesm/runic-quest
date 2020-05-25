@@ -6,10 +6,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="test.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="GoRogue" Version="2.6.0" />
     <PackageReference Include="MonoGame.Framework.DesktopGL.Core" Version="3.8.0.1" />
     <PackageReference Include="SadConsole" Version="8.99.0" />
     <PackageReference Include="SadConsole.GoRogueHelpers" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\test.png" />
+    <Resource Include="test.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="assets\test.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

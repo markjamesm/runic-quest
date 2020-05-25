@@ -24,6 +24,8 @@ namespace RunicQuest
         internal MapScreen MapScreen { get; private set; }
         public MessageLogWindow MessageLog;
 
+        private SplashScreen SplashScreen;
+
         public UIManager()
         {
             // must be set to true
@@ -41,6 +43,13 @@ namespace RunicQuest
         // so they are updated and drawn
         public void CreateConsoles()
         {
+
+            // Display the Splashscreen
+
+            SplashScreen = new SplashScreen();
+            Children.Add(SplashScreen);
+            SplashScreen.IsVisible = true;
+
             // Generate the map and add it as a Child of the UI manager
             MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
             Children.Add(MapScreen);
