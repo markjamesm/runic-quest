@@ -1,5 +1,6 @@
 ﻿using GoRogue.GameFramework;
-using SadConsole;
+using RunicQuest.UI;
+
 
 namespace RunicQuest
 {

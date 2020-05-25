@@ -34,11 +34,14 @@ namespace RunicQuest
                 if (info.IsKeyPressed(key))
                 {
                     moveDirection = s_movementDirectionMapping[key];
+                    PlayerStats.StepsTaken += 1;
+                    System.Console.WriteLine($"{PlayerStats.StepsTaken}");
                     break;
                 }
             }
 
             Position += moveDirection;
+           
 
             if (moveDirection != Direction.NONE)
                 return true;

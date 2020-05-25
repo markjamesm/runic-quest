@@ -12,4 +12,19 @@
     <PackageReference Include="SadConsole.GoRogueHelpers" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Resource Include="assets\test.png" />
+    <Resource Include="test.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="assets\test.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

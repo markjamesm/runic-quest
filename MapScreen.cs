@@ -5,6 +5,7 @@ using GoRogue.MapViews;
 using Microsoft.Xna.Framework;
 using SadConsole;
 using XnaRect = Microsoft.Xna.Framework.Rectangle;
+using RunicQuest.UI;
 
 namespace RunicQuest
 {
