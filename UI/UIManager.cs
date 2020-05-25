@@ -60,10 +60,14 @@ namespace RunicQuest.UI
             MessageLog.Position = new Point(0, 20);
 
             // Print a test method
+<<<<<<< Updated upstream:UI/UIManager.cs
             MessageLog.Add("Testing 123");
             MessageLog.Add("Testing 123");
             MessageLog.Add("Testing 123");
             MessageLog.Add("Testing 123");
+=======
+            MessageLog.Add($"{PlayerStats.StepsTaken}");
+>>>>>>> Stashed changes:UIManager.cs
         }
     }
 }

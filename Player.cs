@@ -9,6 +9,11 @@ namespace RunicQuest
     // Custom class for the player is used in this example just so we can handle input.  This could be done via a component, or in a main screen, but for simplicity we do it here.
     internal class Player : BasicEntity
     {
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
         private static readonly Dictionary<Keys, Direction> s_movementDirectionMapping = new Dictionary<Keys, Direction>
         {
             { Keys.NumPad7, Direction.UP_LEFT }, { Keys.NumPad8, Direction.UP }, { Keys.NumPad9, Direction.UP_RIGHT },
@@ -33,11 +38,14 @@ namespace RunicQuest
                 if (info.IsKeyPressed(key))
                 {
                     moveDirection = s_movementDirectionMapping[key];
+                    PlayerStats.StepsTaken += 1;
+                    System.Console.WriteLine($"{PlayerStats.StepsTaken}");
                     break;
                 }
             }
 
             Position += moveDirection;
+           
 
             if (moveDirection != Direction.NONE)
                 return true;
