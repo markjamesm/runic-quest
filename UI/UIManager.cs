@@ -60,8 +60,7 @@ namespace RunicQuest.UI
             MessageLog.Position = new Point(0, 20);
 
             // Print a test method
-            MessageLog.Add($"{PlayerStats.StepsTaken}");
-
+            MessageLog.Add("Welcome to Runic Quest Alpha!");
         }
     }
 }
