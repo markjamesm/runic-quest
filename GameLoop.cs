@@ -1,4 +1,5 @@
 ﻿using GoRogue.GameFramework;
+using SadConsole;
 
 namespace RunicQuest
 {
@@ -24,6 +25,9 @@ namespace RunicQuest
         {
             // Create our UI Manager and then spawn our consoles.
             UIManager = new UIManager();
+
+            // From an unreleased SadConsole build. Will uncomment when its release.
+            // SadConsole.Themes.Library.Default.Colors = SadConsole.Themes.Colors.CreateAnsi();
             UIManager.CreateConsoles();
 
         }
