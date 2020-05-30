@@ -6,4 +6,4 @@ Runic Quest is a cross-platform roguelike written in C# and makes use of the [Sa
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/20845425/82406649-30269300-9a35-11ea-97e9-a2eb5d769466.jpg"/>
+<img src="https://user-images.githubusercontent.com/20845425/83340094-2eb16200-a2a2-11ea-87b1-17fd1db06272.png"/>
